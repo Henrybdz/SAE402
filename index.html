@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Guillaume Tell - Le Jeu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-screen">
+            <canvas id="game-canvas"></canvas>
+        </div>
+        <div id="controls">
+            <div id="joystick-container">
+                <div id="joystick-base">
+                    <div id="joystick-thumb"></div>
+                </div>
+            </div>
+            <div id="power-container">
+                <div id="power-bar-container">
+                    <div id="power-bar"></div>
+                </div>
+                <button id="shoot-button">TIRER</button>
+            </div>
+        </div>
+        <div id="overlay">
+            <div id="start-screen" class="screen">
+                <h1>Guillaume Tell</h1>
+                <p>Tirez sur la pomme, pas sur le voleur !</p>
+                <p>Utilisez le joystick pour viser et maintenez le bouton pour ajuster la puissance.</p>
+                <div id="high-score-display">Meilleur score: 0</div>
+                <button id="start-button">COMMENCER</button>
+            </div>
+            <div id="level-up-screen" class="screen hidden">
+                <h1>Niveau Suivant!</h1>
+                <p id="level-up-message">Niveau 2</p>
+                <p class="level-description">La difficulté augmente...</p>
+                <button id="continue-button">CONTINUER</button>
+            </div>
+            <div id="game-over-screen" class="screen hidden">
+                <h1>Game Over</h1>
+                <p id="final-score">Score: 0</p>
+                <p id="high-score-message" class="hidden">Nouveau Record!</p>
+                <button id="restart-button">REJOUER</button>
+            </div>
+        </div>
+        <div id="particles-container"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
